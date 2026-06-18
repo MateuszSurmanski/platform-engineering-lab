@@ -6,43 +6,22 @@ The goal of this project is to show how application onboarding, repository provi
 
 This repository does not contain production source code. It focuses on architecture, patterns, contracts, design decisions and lessons learned.
 
+## Table of Contents
+
+- [Architecture](#architecture)
+- [Problem](#problem)
+- [Proposed Solution](#proposed-solution)
+- [High-Level Flow](#high-level-flow)
+- [Core Components](#core-components)
+- [Design Principles](#design-principles)
+- [Documentation](#documentation)
+- [Status](#status)
+
 # Architecture
 
 [![Platform Architecture](./diagrams/high-level.png)](./diagrams/high-level.png)
 
 ---
-
-# End-to-End Flow
-
-[![IDP Reconciler Flow](./diagrams/idp-reconciller-flow.png)](./diagrams/idp-reconciller-flow.png)
-
----
-
-# Repository Provisioning
-
-## Template Repository
-
-[![Application Template](./diagrams/template-python.png)](./diagrams/template-python.png)
-
-## Generated Application Repository
-
-[![Application Repository](./diagrams/hello-python-repository.png)](./diagrams/hello-python-repository.png)
-
----
-
-# GitOps Deployment Model
-
-## GitOps Repository
-
-[![GitOps Repository](./diagrams/gitops-repository.png)](./diagrams/gitops-repository.png)
-
-## Argo CD ApplicationSet
-
-[![ArgoCD ApplicationSet](./diagrams/argocd-appset.png)](./diagrams/argocd-appset.png)
-
-## Argo CD Application
-
-[![ArgoCD Application](./diagrams/argocd-hello-python-app.png)](./diagrams/argocd-hello-python-app.png)
 
 ## Problem
 
@@ -86,12 +65,20 @@ IDP Reconciler
   |    CI/CD pipeline
   |
   +--> GitOps Repository
+  |      |
+  |      v
+  |    Argo CD
+  |      |
+  |      v
+  |    Kubernetes
+  |  
+  +--> Cloudflare Repository
          |
          v
-       Argo CD
+       Cloudflare Terraforming
          |
          v
-       Kubernetes
+       Ingress/Expose
 ```
 
 ## Core Components
@@ -118,24 +105,15 @@ IDP Reconciler
 * Application teams should describe intent, not implementation details.
 * Ownership must be explicit from the beginning.
 
-## Repository Structure
+## Documentation
 
-```text
-.
-├── README.md
-├── docs
-│   ├── 01-overview.md
-│   ├── 02-developer-onboarding.md
-│   ├── 03-repository-provisioning.md
-│   ├── 04-ci-cd.md
-│   ├── 05-gitops-deployment.md
-│   └── 06-architecture.md
-├── diagrams
-├── contracts
-│   └── application-contract.yaml
-└── examples
-    └── hello-app.yaml
-```
+- [Overview](docs/01-overview.md)
+- [Developer Onboarding](docs/02-developer-onboarding.md)
+- [Repository Provisioning](docs/03-repository-provisioning.md)
+- [CI/CD](docs/04-ci-cd.md)
+- [GitOps Deployment](docs/05-gitops-deployment.md)
+- [Architecture](docs/06-architecture.md)
+- [Architecture Decision Records](docs/adrs/)
 
 ## Status
 
