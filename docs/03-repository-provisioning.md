@@ -168,9 +168,5 @@ New repositories inherit predefined templates and CI/CD standards.
 
 Potential future enhancements:
 
-* automatic repository archival
-* ownership validation
-* repository lifecycle management
 * template version management
 * automated CI/CD component upgrades
-* compliance policy enforcement

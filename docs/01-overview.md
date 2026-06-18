@@ -2,8 +2,7 @@
 
 This project describes a lightweight Internal Developer Platform pattern based on GitLab, Terraform, GitOps, Argo CD and Kubernetes.
 
-The platform is designed around a declarative application contract. Instead of manually creating repositories, CI/CD configuration, GitOps manifests and ingress configuration, the user defines the desired application state in a YAML file.
-
+The platform is designed around a declarative application contract. Instead of manually creating repositories, CI/CD configuration, GitOps manifests and ingress configuration, the user defines the desired application state in a YAML file. In te Enterprise solution YAML should be replaced of IDP Frontend Platform, for example backstage.io or another solution.
 The IDP reconciler reads this contract and creates merge requests to the required platform repositories.
 
 ## Goals
@@ -11,7 +10,7 @@ The IDP reconciler reads this contract and creates merge requests to the require
 The main goals are:
 
 * standardize application onboarding
-* reduce manual platform work
+* reduce manual platform work for developers
 * keep all changes auditable
 * use Git as the source of truth
 * separate application intent from platform implementation
@@ -41,7 +40,7 @@ IDP Reconciler
         +--> Cloudflare configuration
 ```
 
-The reconciler does not apply changes directly. It generates merge requests. This keeps platform changes reviewable, auditable and reversible.
+The reconciler does not apply changes directly. It generates merge requests and sometimes sets automerge for non-critical repositories or non-critical path. This keeps platform changes reviewable, auditable and reversible.
 
 ## Main Idea
 
@@ -74,6 +73,5 @@ This means:
 
 * desired state is stored in Git
 * changes are introduced through merge requests
-* automation generates changes, but does not bypass review by default
 * Argo CD reconciles Kubernetes state from Git
 * Terraform provisions GitLab and platform resources from Git

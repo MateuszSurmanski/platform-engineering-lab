@@ -16,7 +16,7 @@ The CI/CD model follows several principles:
 * platform standards should be centrally managed
 * application repositories should remain lightweight
 * updates should be propagated in a controlled way
-* teams should not duplicate CI/CD logic
+* teams should not duplicate CI/CD logic but extensions is avaliable
 
 ## Pipeline Ownership Model
 
@@ -25,13 +25,6 @@ Application teams own:
 * application source code
 * tests
 * application configuration
-
-Platform teams own:
-
-* CI/CD components
-* delivery standards
-* security checks
-* build process templates
 
 This separation allows platform improvements without requiring teams to redesign their pipelines.
 
@@ -88,8 +81,6 @@ Argo CD Deployment
 ```
 
 ## Container Build
-
-Applications are packaged as OCI-compatible container images.
 
 The platform is responsible for maintaining the standard build approach.
 
@@ -211,25 +202,3 @@ Application Repositories
 
 This allows standardization without directly modifying application repositories.
 
-## Why Not Direct Deployments?
-
-Direct deployment from application pipelines introduces several challenges:
-
-* reduced auditability
-* deployment logic duplication
-* inconsistent environments
-* weaker GitOps guarantees
-
-The platform therefore treats GitOps repositories as the deployment interface.
-
-## Future Improvements
-
-Potential future enhancements:
-
-* dependency scanning
-* SBOM generation
-* container signing
-* supply chain security
-* progressive delivery
-* deployment approvals
-* automated rollback mechanisms

@@ -6,6 +6,48 @@ The goal of this project is to show how application onboarding, repository provi
 
 This repository does not contain production source code. It focuses on architecture, patterns, contracts, design decisions and lessons learned.
 
+## Architecture
+
+![Platform Architecture](./diagrams/high-level.png)
+
+# Architecture
+
+[![Platform Architecture](./diagrams/high-level.png)](./diagrams/high-level.png)
+
+---
+
+# End-to-End Flow
+
+[![IDP Reconciler Flow](./diagrams/idp-reconciller-flow.png)](./diagrams/idp-reconciller-flow.png)
+
+---
+
+# Repository Provisioning
+
+## Template Repository
+
+[![Application Template](./diagrams/template-python.png)](./diagrams/template-python.png)
+
+## Generated Application Repository
+
+[![Application Repository](./diagrams/hello-python-repository.png)](./diagrams/hello-python-repository.png)
+
+---
+
+# GitOps Deployment Model
+
+## GitOps Repository
+
+[![GitOps Repository](./diagrams/gitops-repository.png)](./diagrams/gitops-repository.png)
+
+## Argo CD ApplicationSet
+
+[![ArgoCD ApplicationSet](./diagrams/argocd-appset.png)](./diagrams/argocd-appset.png)
+
+## Argo CD Application
+
+[![ArgoCD Application](./diagrams/argocd-hello-python-app.png)](./diagrams/argocd-hello-python-app.png)
+
 ## Problem
 
 Onboarding a new application to Kubernetes usually requires several manual steps:
