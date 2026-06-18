@@ -1,0 +1,39 @@
+apiVersion: idp.msurmanski.com/v1alpha1
+kind: Application
+
+metadata:
+  name: hello-app
+  description: Example FastAPI application
+  owner: team-platform
+
+repository:
+  namespace: owned/homelab/applications
+  template: python-fastapi
+  visibility: private
+
+ci:
+  component: platform/python-app
+  component_ref: v1.0.0
+  automerge_updates: true
+
+runtime:
+  orchestrator: k3s
+  namespace: hello-app
+  port: 8000
+  replicas: 2
+
+ingress:
+  enabled: true
+  host: hello-app.example.com
+  public: false
+
+cloudflare:
+  enabled: true
+
+quality:
+  sonarqube: true
+  sast: true
+
+security:
+  vault: false
+  network_policy: default-deny

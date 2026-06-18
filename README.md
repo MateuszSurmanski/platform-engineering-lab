@@ -91,11 +91,8 @@ IDP Reconciler
 │   ├── 03-repository-provisioning.md
 │   ├── 04-ci-cd.md
 │   ├── 05-gitops-deployment.md
-│   ├── 06-security.md
-│   └── 07-roadmap.md
+│   └── 06-architecture.md
 ├── diagrams
-├── adr
-│   └── 0001-gitops-as-source-of-truth.md
 ├── contracts
 │   └── application-contract.yaml
 └── examples

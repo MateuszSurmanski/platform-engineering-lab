@@ -1,0 +1,24 @@
+metadata:
+  name: hello-app
+  description: Hello app application
+  owner: team-a
+
+repository:
+  namespace: my/super/namespace
+  template: python-fastapi
+
+ci:
+  component: platform/python-app
+  component_ref: v1.0.0
+  automerge_updates: true
+
+runtime:
+  orchestrator: k3s
+  namespace: hello-app
+  port: 8000
+
+ingress:
+  host: hello-app.company.com
+
+cloudflare:
+  enabled: true
