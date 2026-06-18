@@ -6,10 +6,6 @@ The goal of this project is to show how application onboarding, repository provi
 
 This repository does not contain production source code. It focuses on architecture, patterns, contracts, design decisions and lessons learned.
 
-## Architecture
-
-![Platform Architecture](./diagrams/high-level.png)
-
 # Architecture
 
 [![Platform Architecture](./diagrams/high-level.png)](./diagrams/high-level.png)
