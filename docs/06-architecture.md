@@ -43,8 +43,6 @@ IDP Reconciler
 
 ## Architecture Diagram
 
-Add the main diagram here:
-
 ```md
 ![High-level architecture](../diagrams/high-level.png)
 ```
