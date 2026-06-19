@@ -8,7 +8,8 @@ This repository does not contain production source code. It focuses on architect
 
 ## Table of Contents
 
-- [Architecture](#architecture)
+- [Architecture Decision Records](#architecture-decision-records)
+- [Architecture Big Picture](#architecture-big-picture)
 - [Problem](#problem)
 - [Proposed Solution](#proposed-solution)
 - [High-Level Flow](#high-level-flow)
@@ -17,7 +18,16 @@ This repository does not contain production source code. It focuses on architect
 - [Documentation](#documentation)
 - [Status](#status)
 
-# Architecture
+# Architecture Decision Records
+
+| ADR | Decision | Status |
+|---|---|---|
+| [ADR-001](001-mr-driven-reconciliation.md) | Merge Request Driven Reconciliation | Approved |
+| [ADR-002](002-terraform-repository-per-team-namespace.md) | Terraform Repository per Team Namespace | Approved |
+| [ADR-003](003-argocd-applicationset-for-application-discovery.md) | Argo CD ApplicationSet for Application Discovery | Approved |
+| [ADR-004](004-contract-driven-application-onboarding.md) | Contract-Driven Application Onboarding | Approved |
+
+# Architecture big picture
 
 [![Platform Architecture](./docs/diagrams/big-picture.svg)](./docs/diagrams/big-picture.svg)
 
