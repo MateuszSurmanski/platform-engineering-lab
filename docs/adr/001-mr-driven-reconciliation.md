@@ -60,3 +60,6 @@ The platform uses merge request driven changes for all repositories managed by t
 ### Negative
 
 * The overall process takes longer because the reconciler must wait for pipeline execution in each targer repository. 
+
+## Diagram
+[![MR reconciliation flow](../diagrams/adr-001/mr-driven-reconciliation.svg)](../diagrams/adr-001/mr-driven-reconciliation.svg)

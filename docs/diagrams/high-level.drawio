@@ -1,0 +1,231 @@
+<mxfile host="Electron">
+  <diagram name="Strona-1" id="Zz5XI39leRFqVOpIAewV">
+    <mxGraphModel dx="2989" dy="1274" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-8" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="new namespace" vertex="1">
+          <mxGeometry height="570" width="360" x="560" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-31" parent="FWl32-FCMnPrHn4u-AfV-8" style="swimlane;whiteSpace=wrap;html=1;" value="Reusable Component for Terraform" vertex="1">
+          <mxGeometry height="130" width="300" x="30" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-32" parent="FWl32-FCMnPrHn4u-AfV-31" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;ol&gt;&lt;li&gt;gitlab component&lt;/li&gt;&lt;li&gt;reusable component&lt;/li&gt;&lt;li&gt;manage only space in new namespace&lt;/li&gt;&lt;li&gt;responsibility (?)&lt;/li&gt;&lt;li&gt;how to prepare mr (?)&lt;/li&gt;&lt;/ol&gt;" vertex="1">
+          <mxGeometry height="90" width="280" x="10" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-56" parent="FWl32-FCMnPrHn4u-AfV-8" style="swimlane;whiteSpace=wrap;html=1;" value="New App Repo" vertex="1">
+          <mxGeometry height="80" width="300" x="30" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-59" parent="FWl32-FCMnPrHn4u-AfV-56" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;ol&gt;&lt;li&gt;include ci pipeline&lt;/li&gt;&lt;li&gt;include technology template&lt;/li&gt;&lt;/ol&gt;" vertex="1">
+          <mxGeometry height="40" width="280" x="10" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-57" edge="1" parent="FWl32-FCMnPrHn4u-AfV-8" source="FWl32-FCMnPrHn4u-AfV-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="FWl32-FCMnPrHn4u-AfV-56">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="170" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-58" connectable="0" parent="FWl32-FCMnPrHn4u-AfV-57" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1.1 create and configure" vertex="1">
+          <mxGeometry relative="1" x="0.3" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-74" parent="FWl32-FCMnPrHn4u-AfV-8" style="swimlane;whiteSpace=wrap;html=1;" value="GitOps Repo" vertex="1">
+          <mxGeometry height="130" width="300" x="30" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-75" parent="FWl32-FCMnPrHn4u-AfV-74" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;ol&gt;&lt;li&gt;include ci pipeline&lt;/li&gt;&lt;li&gt;include technology template&lt;/li&gt;&lt;li&gt;build image with tag (ex: latest)&lt;/li&gt;&lt;/ol&gt;" vertex="1">
+          <mxGeometry height="90" width="280" x="10" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-71" edge="1" parent="FWl32-FCMnPrHn4u-AfV-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="FWl32-FCMnPrHn4u-AfV-56" value="3. prepare MR with template repo">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-430" y="305" />
+              <mxPoint x="40" y="305" />
+            </Array>
+            <mxPoint x="-430" y="200" as="sourcePoint" />
+            <mxPoint x="10" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-38" edge="1" parent="1" source="FWl32-FCMnPrHn4u-AfV-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="FWl32-FCMnPrHn4u-AfV-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-39" connectable="0" parent="FWl32-FCMnPrHn4u-AfV-38" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="create mr" vertex="1">
+          <mxGeometry relative="1" x="-0.075" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-13" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="reconciler" vertex="1">
+          <mxGeometry height="200" width="200" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-14" parent="FWl32-FCMnPrHn4u-AfV-13" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;ol&gt;&lt;li&gt;parse parameters&lt;/li&gt;&lt;li&gt;validate&lt;/li&gt;&lt;li&gt;prepare input to TF&lt;/li&gt;&lt;li&gt;create MR to central TF&lt;/li&gt;&lt;li&gt;wait for end TF&lt;/li&gt;&lt;li&gt;return info somewhere&lt;/li&gt;&lt;/ol&gt;" vertex="1">
+          <mxGeometry height="160" width="190" x="5" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-26" edge="1" parent="1" source="FWl32-FCMnPrHn4u-AfV-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="FWl32-FCMnPrHn4u-AfV-14" value="trigger">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-22" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="IDP: Create Gitlab namespace" vertex="1">
+          <mxGeometry height="60" width="200" x="-280" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-23" parent="FWl32-FCMnPrHn4u-AfV-22" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;text-align: center;&quot;&gt;necessary parameters&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;" vertex="1">
+          <mxGeometry height="20" width="185" x="5" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-34" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="central terraform" vertex="1">
+          <mxGeometry height="200" width="200" x="280" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-35" parent="FWl32-FCMnPrHn4u-AfV-34" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;ol&gt;&lt;li&gt;create namespace&lt;/li&gt;&lt;li&gt;configure namespace&amp;nbsp;&lt;/li&gt;&lt;ol&gt;&lt;li&gt;hcv&lt;/li&gt;&lt;/ol&gt;&lt;li&gt;add access&lt;/li&gt;&lt;li&gt;provide TF component&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" vertex="1">
+          <mxGeometry height="150" width="195" x="5" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-42" edge="1" parent="1" source="FWl32-FCMnPrHn4u-AfV-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="FWl32-FCMnPrHn4u-AfV-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-44" connectable="0" parent="FWl32-FCMnPrHn4u-AfV-42" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="create namespace" vertex="1">
+          <mxGeometry relative="1" x="0.0667" as="geometry">
+            <mxPoint y="191" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-52" edge="1" parent="1" source="FWl32-FCMnPrHn4u-AfV-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="FWl32-FCMnPrHn4u-AfV-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-45" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="IDP: Create New Application Repo" vertex="1">
+          <mxGeometry height="60" width="200" x="-280" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-46" parent="FWl32-FCMnPrHn4u-AfV-45" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;text-align: center;&quot;&gt;necessary parameters&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;" vertex="1">
+          <mxGeometry height="20" width="185" x="5" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-73" edge="1" parent="1" source="FWl32-FCMnPrHn4u-AfV-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="FWl32-FCMnPrHn4u-AfV-31" value="1. create mr">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-76" edge="1" parent="1" source="FWl32-FCMnPrHn4u-AfV-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="FWl32-FCMnPrHn4u-AfV-74" value="4. prepare MR and merge">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="120" y="1165" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-110" edge="1" parent="1" source="FWl32-FCMnPrHn4u-AfV-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="FWl32-FCMnPrHn4u-AfV-99" value="7. prepare MR for TF and helm-values">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="30" y="1430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-47" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="reconciler" vertex="1">
+          <mxGeometry height="200" width="200" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-48" parent="FWl32-FCMnPrHn4u-AfV-47" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;ol&gt;&lt;li&gt;parse parameters&lt;/li&gt;&lt;li&gt;validate&lt;/li&gt;&lt;li&gt;prepare input to TF&lt;/li&gt;&lt;li&gt;create MR to central TF&lt;/li&gt;&lt;li&gt;wait for end TF&lt;/li&gt;&lt;li&gt;return info somewhere&lt;/li&gt;&lt;/ol&gt;" vertex="1">
+          <mxGeometry height="160" width="190" x="5" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-64" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Central Template Repo" vertex="1">
+          <mxGeometry height="80" width="200" x="270" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-65" parent="FWl32-FCMnPrHn4u-AfV-64" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Template for technology (ex. python)" vertex="1">
+          <mxGeometry height="45" width="190" x="5" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-70" edge="1" parent="1" source="FWl32-FCMnPrHn4u-AfV-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" target="FWl32-FCMnPrHn4u-AfV-64" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-72" connectable="0" parent="FWl32-FCMnPrHn4u-AfV-70" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2. read template repo" vertex="1">
+          <mxGeometry relative="1" x="0.37" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-77" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="K8S Cluster" vertex="1">
+          <mxGeometry height="755" width="390" x="1060" y="695" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-78" parent="FWl32-FCMnPrHn4u-AfV-77" style="swimlane;whiteSpace=wrap;html=1;" value="ArgoCD" vertex="1">
+          <mxGeometry height="685" width="350" x="20" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-83" edge="1" parent="FWl32-FCMnPrHn4u-AfV-78" source="FWl32-FCMnPrHn4u-AfV-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="FWl32-FCMnPrHn4u-AfV-82" value="Generate new Application">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-79" parent="FWl32-FCMnPrHn4u-AfV-78" style="rounded=0;whiteSpace=wrap;html=1;" value="Application Set" vertex="1">
+          <mxGeometry height="60" width="120" x="115" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-90" edge="1" parent="FWl32-FCMnPrHn4u-AfV-78" source="FWl32-FCMnPrHn4u-AfV-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FWl32-FCMnPrHn4u-AfV-89" value="Generate all k8s manifests">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-82" parent="FWl32-FCMnPrHn4u-AfV-78" style="rounded=0;whiteSpace=wrap;html=1;" value="Application" vertex="1">
+          <mxGeometry height="60" width="120" x="115" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-115" parent="FWl32-FCMnPrHn4u-AfV-78" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;direction=east;" value="Istio" vertex="1">
+          <mxGeometry height="290" width="200" x="75" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-89" parent="FWl32-FCMnPrHn4u-AfV-115" style="rounded=0;whiteSpace=wrap;html=1;" value="K8S manifests" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-104" parent="FWl32-FCMnPrHn4u-AfV-115" style="rounded=0;whiteSpace=wrap;html=1;" value="Application Cloudflare" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-80" edge="1" parent="1" source="FWl32-FCMnPrHn4u-AfV-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="FWl32-FCMnPrHn4u-AfV-74" value="5. observe">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="990" y="805" />
+              <mxPoint x="990" y="1133" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-91" edge="1" parent="1" source="FWl32-FCMnPrHn4u-AfV-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" target="FWl32-FCMnPrHn4u-AfV-74" value="6. get tag latest">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1030" y="1020" />
+              <mxPoint x="1030" y="1198" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-99" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Cloudflare Repo" vertex="1">
+          <mxGeometry height="260" width="606" x="124" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-109" parent="FWl32-FCMnPrHn4u-AfV-99" style="swimlane;whiteSpace=wrap;html=1;" value="Cloudflare Terraform" vertex="1">
+          <mxGeometry height="120" width="576" x="14" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-100" parent="FWl32-FCMnPrHn4u-AfV-109" style="rounded=0;whiteSpace=wrap;html=1;" value="create DNS" vertex="1">
+          <mxGeometry height="60" width="120" x="12" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-101" parent="FWl32-FCMnPrHn4u-AfV-109" style="rounded=0;whiteSpace=wrap;html=1;" value="create Tunnel" vertex="1">
+          <mxGeometry height="60" width="120" x="156" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-102" parent="FWl32-FCMnPrHn4u-AfV-109" style="rounded=0;whiteSpace=wrap;html=1;" value="create Policy" vertex="1">
+          <mxGeometry height="60" width="120" x="302" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-103" parent="FWl32-FCMnPrHn4u-AfV-109" style="rounded=0;whiteSpace=wrap;html=1;" value="create Application" vertex="1">
+          <mxGeometry height="60" width="120" x="442" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-108" parent="FWl32-FCMnPrHn4u-AfV-99" style="rounded=0;whiteSpace=wrap;html=1;" value="helm-values file" vertex="1">
+          <mxGeometry height="60" width="120" x="243" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-111" edge="1" parent="1" source="FWl32-FCMnPrHn4u-AfV-104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="FWl32-FCMnPrHn4u-AfV-108" value="9. observe">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="960" y="1220" />
+              <mxPoint x="960" y="1510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-113" parent="1" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="1240" y="1570" as="geometry" />
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-112" edge="1" parent="1" source="FWl32-FCMnPrHn4u-AfV-104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="FWl32-FCMnPrHn4u-AfV-113">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1255" y="1530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-114" connectable="0" parent="FWl32-FCMnPrHn4u-AfV-112" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="10. After 10min New Application is avaliable from Internet on FQDN&lt;div&gt;*.msurmanski.com&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.3364" y="-2" as="geometry">
+            <mxPoint x="2" y="26" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-116" edge="1" parent="1" source="FWl32-FCMnPrHn4u-AfV-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="FWl32-FCMnPrHn4u-AfV-108">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="790" y="1495" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FWl32-FCMnPrHn4u-AfV-117" connectable="0" parent="FWl32-FCMnPrHn4u-AfV-116" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="8. update image version on dev" vertex="1">
+          <mxGeometry relative="1" x="-0.3451" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,118 @@
+<mxfile host="Electron">
+  <diagram name="Strona-1" id="6VE4Jr9Tckn7qCCeVZOr">
+    <mxGraphModel dx="2828" dy="691" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="STYRehBjRyr1LmbqGrvy-2" parent="1" style="shape=stencil(fZbdcgIhDIWfZm8zQAg/17Z9j85U606tdqz9e/tmZ0c0uJ47xP0I5JwEBl59bp8/1kNwn6fj4W39M76ctgM/DCGM++36OJ50NPDjwKvN4bh+PR6+9i/z74/n6ctp9H74nlb4nbmSKZeJCu5vngmZ6jzzNAO7cX8FVKEsBuBKrgKg9oAE8gkCbLeUhEoEQKSUDZDLeWYRKIl8MEDRmHwfyBrBG6Amyu4+kDxxMoB3jhwgYu7TVAsVkFcWCs4CTBEoF4RctKeOxHIf8IXYpikHikAIf+MNUW94AGSSaoAoFIE3AlOyeWU+p2E5S9yfQZcQILVuQOwZdJNoS9Ls3wA5u2XZTIHECqeJ9kDpSaauRiNVcAY1QhdBzeLBli5WazpkSsBLV25uRaqWRyFawTQzRRIQYirJzq5atkBqLfouwqUxLBepthWb10vrWZY6UOAeyKCCtDV625mm9gmUC4Wc3VLJMMIE1BsA2FW9JraVlQB7n3c9oMKhCLEvIM1zBPZ25/umNQ1tVEC2G+fFCC8g398O2hNQuQlVu752DBfA+q0ptnqO5JFmeuIuo9DY7KjY71UxdJV4EntifPWorW++R/dC4t7V3DlIB5cHx2bc7eb3yvX//QNFp+bHDT/+Aw==);lineShape=1;strokeColor=default;" value="" vertex="1">
+          <mxGeometry height="4.665236216357698" width="4.672539772115442" x="-500.00203915752434" y="219.99531245851915" as="geometry" />
+        </mxCell>
+        <mxCell id="STYRehBjRyr1LmbqGrvy-3" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" value=":reconciler" vertex="1">
+          <mxGeometry height="340" width="100" x="-970" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="STYRehBjRyr1LmbqGrvy-4" parent="STYRehBjRyr1LmbqGrvy-3" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="260" width="10" x="45" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="STYRehBjRyr1LmbqGrvy-5" edge="1" parent="STYRehBjRyr1LmbqGrvy-3" style="verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;shadow=0;strokeWidth=1;" target="STYRehBjRyr1LmbqGrvy-4" value="app contract">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-30" y="70" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="STYRehBjRyr1LmbqGrvy-7" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" value=":gitlab repo terraform" vertex="1">
+          <mxGeometry height="340" width="140" x="-810" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="STYRehBjRyr1LmbqGrvy-8" parent="STYRehBjRyr1LmbqGrvy-7" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="250" width="10" x="65" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="STYRehBjRyr1LmbqGrvy-23" edge="1" parent="STYRehBjRyr1LmbqGrvy-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="Run plan pipeline&amp;nbsp;">
+          <mxGeometry relative="1" x="0.0019" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="75" y="204.68" as="sourcePoint" />
+            <mxPoint x="245" y="204.68" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="STYRehBjRyr1LmbqGrvy-20" edge="1" parent="STYRehBjRyr1LmbqGrvy-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.014;entryY=0.226;entryDx=0;entryDy=0;entryPerimeter=0;" value="Commit file">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-104.86000000000001" y="150.00000000000006" as="sourcePoint" />
+            <mxPoint x="65.00000000000011" y="150.37999999999994" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="STYRehBjRyr1LmbqGrvy-17" edge="1" parent="STYRehBjRyr1LmbqGrvy-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="Template jinja2 files">
+          <mxGeometry relative="1" x="-0.0018" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="-20" y="119.97000000000003" />
+              <mxPoint x="-20" y="119.97000000000003" />
+            </Array>
+            <mxPoint x="-105" y="119.9985714285715" as="sourcePoint" />
+            <mxPoint x="65" y="119.9985714285715" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="STYRehBjRyr1LmbqGrvy-21" edge="1" parent="STYRehBjRyr1LmbqGrvy-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="O&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;pen MR&lt;br&gt;with auto-merge&lt;/span&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-20" y="180" />
+              <mxPoint x="-20" y="180" />
+            </Array>
+            <mxPoint x="-105" y="180" as="sourcePoint" />
+            <mxPoint x="65" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="STYRehBjRyr1LmbqGrvy-35" edge="1" parent="STYRehBjRyr1LmbqGrvy-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" value="return">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-20" y="319.97" />
+              <mxPoint x="-20" y="319.97" />
+            </Array>
+            <mxPoint x="65" y="319.9985714285715" as="sourcePoint" />
+            <mxPoint x="-105" y="319.9985714285715" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="STYRehBjRyr1LmbqGrvy-13" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" value=":terraform pipeline" vertex="1">
+          <mxGeometry height="340" width="100" x="-610" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="STYRehBjRyr1LmbqGrvy-14" parent="STYRehBjRyr1LmbqGrvy-13" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="230" width="10" x="45" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="STYRehBjRyr1LmbqGrvy-19" edge="1" parent="1" source="STYRehBjRyr1LmbqGrvy-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="STYRehBjRyr1LmbqGrvy-8" value="Create branch">
+          <mxGeometry relative="1" x="0.0008" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="-830" y="330" />
+              <mxPoint x="-830" y="330" />
+            </Array>
+            <mxPoint x="-770" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="STYRehBjRyr1LmbqGrvy-26" edge="1" parent="1" source="STYRehBjRyr1LmbqGrvy-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="STYRehBjRyr1LmbqGrvy-8" value="Merge only if&lt;div&gt;pipeline success&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-610" y="475" />
+              <mxPoint x="-610" y="475" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="STYRehBjRyr1LmbqGrvy-36" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="Run apply pipeline">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-610" y="510" />
+              <mxPoint x="-610" y="510" />
+            </Array>
+            <mxPoint x="-735" y="510" as="sourcePoint" />
+            <mxPoint x="-565" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="STYRehBjRyr1LmbqGrvy-38" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" value="return">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-610" y="540" />
+              <mxPoint x="-610" y="540" />
+            </Array>
+            <mxPoint x="-565" y="540" as="sourcePoint" />
+            <mxPoint x="-735" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
