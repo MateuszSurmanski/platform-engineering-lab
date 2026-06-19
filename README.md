@@ -19,7 +19,7 @@ This repository does not contain production source code. It focuses on architect
 
 # Architecture
 
-[![Platform Architecture](./docs/diagrams/high-level.svg)](./docs/diagrams/high-level.svg)
+[![Platform Architecture](./docs/diagrams/big-picture.svg)](./docs/diagrams/big-picture.svg)
 
 ---
 
